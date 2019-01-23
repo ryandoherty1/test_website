@@ -1,0 +1,69 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	overflow-x: hidden;
+	background: radial-gradient(#FFFFFF, #000000);
+}
+
+@font-face {
+    font-family: 'Japanese 3017';
+	src: url('fonts/Japanese3017.ttf') format('truetype');
+}
+
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+h1 {
+	font-family: 'Japanese 3017';
+	font-size: 75pt;
+	background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+	background-size: 1200% 1200%;
+	-webkit-animation: rainbow 8s ease infinite;
+	animation: rainbow 8s ease infinite;
+}
+
+.restrict-img-size {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.container-row {
+	display: flex;
+	flex-direction: row;
+	height: calc(100%/3);
+	width: 100%; 
+	margin: 25px;
+}
+.container-column {
+	display: flex;
+	flex-direction: column;
+	height: calc(100%/3);
+	width: 100%; 
+	margin: 25px;
+}
+
+.center-content {
+	align-items: center;
+	justify-content: center;
+}
+
+.margin-bottom {
+	margin: 25px;
+}
+
+button {
+	height: calc(100%/3);
+	width: calc(100%/2);
+	font-family: 'Japanese 3017';
+	margin: 10px;
+	font-size: 25px;
+}
